@@ -1,4 +1,4 @@
-import { APIID, WS_KEY_MAP } from '../../util';
+import { WS_KEY_MAP } from '../../util';
 import {
   AmendOrderParamsV5,
   BatchAmendOrderParamsV5,
@@ -57,7 +57,6 @@ export interface WSAPIRequest<
   header: {
     'X-BAPI-TIMESTAMP': string;
     'X-BAPI-RECV-WINDOW': string;
-    Referer: typeof APIID;
   };
   args: [TRequestParams];
 }

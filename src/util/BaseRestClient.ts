@@ -3,7 +3,6 @@ import axios, { AxiosRequestConfig, AxiosResponse, Method } from 'axios';
 import https from 'https';
 
 import {
-  APIID,
   RestClientOptions,
   RestClientType,
   getRestBaseUrl,

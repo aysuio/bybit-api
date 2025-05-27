@@ -8,7 +8,6 @@ import {
   WsTopic,
 } from './types';
 import {
-  APIID,
   WSConnectedResult,
   WS_AUTH_ON_CONNECT_KEYS,
   WS_KEY_MAP,
@@ -386,7 +385,6 @@ export class WebsocketClient extends BaseWebsocketClient<
       header: {
         'X-BAPI-RECV-WINDOW': `${this.options.recvWindow}`,
         'X-BAPI-TIMESTAMP': `${timestampMs}`,
-        Referer: APIID,
       },
       op: operation,
       args: [params],
